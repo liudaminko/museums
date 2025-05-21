@@ -6,6 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A5127D5B2DDDDF2D00B2359B /* MapLibre in Frameworks */ = {isa = PBXBuildFile; productRef = A5127D5A2DDDDF2D00B2359B /* MapLibre */; };
+		A5127DDE2DDE272300B2359B /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = A5127DDD2DDE272300B2359B /* GoogleSignIn */; };
+		A5127DE02DDE272300B2359B /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A5127DDF2DDE272300B2359B /* GoogleSignInSwift */; };
+		A5127DE52DDE2A9500B2359B /* FirebaseAI in Frameworks */ = {isa = PBXBuildFile; productRef = A5127DE42DDE2A9500B2359B /* FirebaseAI */; };
+		A5127DE72DDE2A9500B2359B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A5127DE62DDE2A9500B2359B /* FirebaseAnalytics */; };
+		A5127DE92DDE2A9500B2359B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A5127DE82DDE2A9500B2359B /* FirebaseAuth */; };
+		A5127DEB2DDE2A9500B2359B /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = A5127DEA2DDE2A9500B2359B /* FirebaseCore */; };
+		A5127DED2DDE2A9500B2359B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A5127DEC2DDE2A9500B2359B /* FirebaseFirestore */; };
+		A5127E962DDE34DE00B2359B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5127E952DDE34DE00B2359B /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A5127D312DDDDE0200B2359B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +39,7 @@
 		A5127D232DDDDE0000B2359B /* MuseumsMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseumsMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5127D302DDDDE0200B2359B /* MuseumsMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuseumsMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5127D3A2DDDDE0200B2359B /* MuseumsMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuseumsMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5127E952DDE34DE00B2359B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +65,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5127DE02DDE272300B2359B /* GoogleSignInSwift in Frameworks */,
+				A5127DE92DDE2A9500B2359B /* FirebaseAuth in Frameworks */,
+				A5127DE52DDE2A9500B2359B /* FirebaseAI in Frameworks */,
+				A5127D5B2DDDDF2D00B2359B /* MapLibre in Frameworks */,
+				A5127DEB2DDE2A9500B2359B /* FirebaseCore in Frameworks */,
+				A5127DED2DDE2A9500B2359B /* FirebaseFirestore in Frameworks */,
+				A5127DE72DDE2A9500B2359B /* FirebaseAnalytics in Frameworks */,
+				A5127DDE2DDE272300B2359B /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +96,7 @@
 		A5127D1A2DDDDE0000B2359B = {
 			isa = PBXGroup;
 			children = (
+				A5127E952DDE34DE00B2359B /* GoogleService-Info.plist */,
 				A5127D252DDDDE0000B2359B /* MuseumsMap */,
 				A5127D332DDDDE0200B2359B /* MuseumsMapTests */,
 				A5127D3D2DDDDE0200B2359B /* MuseumsMapUITests */,
@@ -112,6 +134,14 @@
 			);
 			name = MuseumsMap;
 			packageProductDependencies = (
+				A5127D5A2DDDDF2D00B2359B /* MapLibre */,
+				A5127DDD2DDE272300B2359B /* GoogleSignIn */,
+				A5127DDF2DDE272300B2359B /* GoogleSignInSwift */,
+				A5127DE42DDE2A9500B2359B /* FirebaseAI */,
+				A5127DE62DDE2A9500B2359B /* FirebaseAnalytics */,
+				A5127DE82DDE2A9500B2359B /* FirebaseAuth */,
+				A5127DEA2DDE2A9500B2359B /* FirebaseCore */,
+				A5127DEC2DDE2A9500B2359B /* FirebaseFirestore */,
 			);
 			productName = MuseumsMap;
 			productReference = A5127D232DDDDE0000B2359B /* MuseumsMap.app */;
@@ -195,6 +225,11 @@
 			);
 			mainGroup = A5127D1A2DDDDE0000B2359B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A5127D592DDDDF2D00B2359B /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */,
+				A5127DDC2DDE272300B2359B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				A5127DE32DDE2A9500B2359B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A5127D242DDDDE0000B2359B /* Products */;
 			projectDirPath = "";
@@ -212,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5127E962DDE34DE00B2359B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +436,7 @@
 				DEVELOPMENT_TEAM = 49TSYPSC35;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Нам потрібна ваша геолокація, щоб краще відображати близькі до вас музеї";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +465,7 @@
 				DEVELOPMENT_TEAM = 49TSYPSC35;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Нам потрібна ваша геолокація, щоб краще відображати близькі до вас музеї";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +596,76 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A5127D592DDDDF2D00B2359B /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maplibre/maplibre-gl-native-distribution";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.14.0;
+			};
+		};
+		A5127DDC2DDE272300B2359B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		A5127DE32DDE2A9500B2359B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A5127D5A2DDDDF2D00B2359B /* MapLibre */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5127D592DDDDF2D00B2359B /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */;
+			productName = MapLibre;
+		};
+		A5127DDD2DDE272300B2359B /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5127DDC2DDE272300B2359B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		A5127DDF2DDE272300B2359B /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5127DDC2DDE272300B2359B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		A5127DE42DDE2A9500B2359B /* FirebaseAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5127DE32DDE2A9500B2359B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAI;
+		};
+		A5127DE62DDE2A9500B2359B /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5127DE32DDE2A9500B2359B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		A5127DE82DDE2A9500B2359B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5127DE32DDE2A9500B2359B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A5127DEA2DDE2A9500B2359B /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5127DE32DDE2A9500B2359B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		A5127DEC2DDE2A9500B2359B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5127DE32DDE2A9500B2359B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A5127D1B2DDDDE0000B2359B /* Project object */;
 }
