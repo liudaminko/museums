@@ -15,7 +15,7 @@
 		A5127DE92DDE2A9500B2359B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A5127DE82DDE2A9500B2359B /* FirebaseAuth */; };
 		A5127DEB2DDE2A9500B2359B /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = A5127DEA2DDE2A9500B2359B /* FirebaseCore */; };
 		A5127DED2DDE2A9500B2359B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A5127DEC2DDE2A9500B2359B /* FirebaseFirestore */; };
-		A5127E962DDE34DE00B2359B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5127E952DDE34DE00B2359B /* GoogleService-Info.plist */; };
+		A5127E982DDE363100B2359B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5127E972DDE363100B2359B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,12 +39,25 @@
 		A5127D232DDDDE0000B2359B /* MuseumsMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseumsMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5127D302DDDDE0200B2359B /* MuseumsMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuseumsMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5127D3A2DDDDE0200B2359B /* MuseumsMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuseumsMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5127E952DDE34DE00B2359B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A5127E972DDE363100B2359B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A5127E9A2DDE364600B2359B /* Exceptions for "MuseumsMap" folder in "MuseumsMap" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A5127D222DDDDE0000B2359B /* MuseumsMap */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A5127D252DDDDE0000B2359B /* MuseumsMap */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A5127E9A2DDE364600B2359B /* Exceptions for "MuseumsMap" folder in "MuseumsMap" target */,
+			);
 			path = MuseumsMap;
 			sourceTree = "<group>";
 		};
@@ -96,7 +109,7 @@
 		A5127D1A2DDDDE0000B2359B = {
 			isa = PBXGroup;
 			children = (
-				A5127E952DDE34DE00B2359B /* GoogleService-Info.plist */,
+				A5127E972DDE363100B2359B /* GoogleService-Info.plist */,
 				A5127D252DDDDE0000B2359B /* MuseumsMap */,
 				A5127D332DDDDE0200B2359B /* MuseumsMapTests */,
 				A5127D3D2DDDDE0200B2359B /* MuseumsMapUITests */,
@@ -247,7 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5127E962DDE34DE00B2359B /* GoogleService-Info.plist in Resources */,
+				A5127E982DDE363100B2359B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +449,7 @@
 				DEVELOPMENT_TEAM = 49TSYPSC35;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MuseumsMap/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Нам потрібна ваша геолокація, щоб краще відображати близькі до вас музеї";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -465,6 +479,7 @@
 				DEVELOPMENT_TEAM = 49TSYPSC35;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MuseumsMap/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Нам потрібна ваша геолокація, щоб краще відображати близькі до вас музеї";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
