@@ -8,17 +8,14 @@
 import SwiftUI
 
 @main
-struct CleanMuseumApp: App {
+struct MuseumsMapApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @StateObject var authController = AuthController()
 
     var body: some Scene {
         WindowGroup {
-            LaunchScreenView()
-                .onAppear {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                        appDelegate.showMainView = true
-                    }
-                }
+            RootView()
+                .environmentObject(authController)
         }
     }
 }
